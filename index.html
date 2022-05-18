@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>HTML5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="subheader">
+            <nav>
+                <ul class="subheader__list">
+                    <li class="subheader__list_link subheader__list_link-t">
+                        <a href="#">
+                            <p>75th Anniversary Year</p>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link subheader__list_link-t">
+                        <a href="#">
+                            <p>Contact</p>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link subheader__list_link-t">
+                        <a href="#">
+                            <p>Renew</p>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link subheader__list_link-t">
+                        <a href="#">
+                            <p>Join</p>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link subheader__list_link-t">
+                        <a href="#">
+                            <p>Subscribe for Email Updates</p>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link">
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link">
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link">
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="subheader__list_link">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="subheader__mob">
+            <nav onclick="this.classList.toggle('active')" class="nav">
+                <ul class="subheader__list-mob">
+                    <li>
+                        <button class="burger-menu" aria-label="Main Menu">
+                            <svg width="25" height="25" viewBox="0 0 100 100">
+                                <path class="line line1"
+                                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                                <path class="line line2" d="M 20,50 H 80" />
+                                <path class="line line3"
+                                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <img src="/images//logo-mob.png" alt="logo">
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="header__content">
+                <div class="header__content_logo">
+                    <div class="logo">
+                        <a href="#"><img src="/images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="header__content_navbar">
+                        <li class="header__content_navbar_link">
+                            <a href="#">
+                                <p class="header__content_navbar_link__text">
+                                    Home
+                                </p>
+                            </a>
+                        </li>
+                        <li class="header__content_navbar_link inner-list">
+                            <a href="#" data-path="first" class="dropdown-toggle">
+                                <p class="header__content_navbar_link__text">
+                                    About
+                                </p>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul data-target="first" class="sublist" id="first_sublist">
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 2</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 3</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 4</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__content_navbar_link inner-list">
+                            <a href="#" data-path="second" class="dropdown-toggle">
+                                <p class="header__content_navbar_link__text">
+                                    Membership
+                                </p>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul data-target="second" class="sublist" id="first_sublist">
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 2</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 3</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 4</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__content_navbar_link inner-list">
+                            <a href="#" data-path="third" class="dropdown-toggle">
+                                <p class="header__content_navbar_link__text">
+                                    Meeting & Events
+                                </p>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul data-target="third" class="sublist" id="first_sublist">
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 2</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 3</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 4</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__content_navbar_link inner-list">
+                            <a href="#" data-path="fourth" class="dropdown-toggle">
+                                <p class="header__content_navbar_link__text">
+                                    Resources
+                                </p>
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul data-target="fourth" class="sublist" id="first_sublist">
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 2</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 3</p>
+                                    </a>
+                                </li>
+                                <li class="sublist__item">
+                                    <a href="#">
+                                        <p>Text 4</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__content_navbar_link">
+                            <a href="#">
+                                <p class="header__content_navbar_link__text">Career Center</p>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="header-mob">
+            <nav>
+                <ul class="header__content_navbar">
+                    <li class="header__content_navbar_link">
+                        <a href="#">
+                            <p class="header__content_navbar_link__text">
+                                Home
+                            </p>
+                        </a>
+                    </li>
+                    <li class="header__content_navbar_link inner-list inner-list-m">
+                        <a href="#">
+                            <p class="header__content_navbar_link__text">
+                                About
+                            </p>
+                            <i class="arr fas fa-angle-down"></i>
+                        </a>
+                        <ul class="sublist-mob">
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 2</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 3</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 4</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__content_navbar_link inner-list inner-list-m">
+                        <a href="#" class="dropdown-toggle-mob">
+                            <p class="header__content_navbar_link__text">
+                                Membership
+                            </p>
+                            <i class="arr fas fa-angle-down"></i>
+                        </a>
+                        <ul class="sublist-mob">
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 2</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 3</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 4</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__content_navbar_link inner-list inner-list-m"">
+                        <a href=" #" class="dropdown-toggle-mob">
+                        <p class="header__content_navbar_link__text">
+                            Meeting & Events
+                        </p>
+                        <i class="arr fas fa-angle-down"></i>
+                        </a>
+                        <ul class="sublist-mob">
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 2</p>
+                                </a
+                            ></li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 3</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 4</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__content_navbar_link inner-list inner-list-m"">
+                        <a href=" #" class="dropdown-toggle-mob">
+                        <p class="header__content_navbar_link__text">
+                            Resources
+                        </p>
+                        <i class="arr fas fa-angle-down"></i>
+                        </a>
+                        <ul class="sublist-mob">
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 2</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 3</p>
+                                </a>
+                            </li>
+                            <li class="sublist__item">
+                                <a href="#">
+                                    <p>Text 4</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__content_navbar_link">
+                        <a href="#">
+                            <p class="header__content_navbar_link__text">Career Center</p>
+                            <i class="fas fa-external-link-alt" style='margin-right: 0.8em'></i>
+                        </a>
+                    </li>
+                    <li class="header__content_navbar_link">
+                        <a href="#">
+                            <p class="header__content_navbar_link__text">Contact</p>
+                        </a>
+                    </li>
+                    <li class="header__content_navbar_link">
+                        <a href="#">
+                            <p class="header__content_navbar_link__text">Renew</p>
+                        </a>
+                    </li>
+                    <li class="header__content_navbar_link">
+                        <a href="#">
+                            <p class="header__content_navbar_link__text">Join ACAD</p>
+                        </a>
+                    </li>
+                    <li class="header__content_navbar_link">
+                        <a href="#">
+                            <p class="header__content_navbar_link__text">Subscribe for Email Updates</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="div"></div>
+</body>
+<script src="main.js"></script>
+
+</html>
